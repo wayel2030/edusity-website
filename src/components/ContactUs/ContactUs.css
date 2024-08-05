@@ -1,0 +1,7 @@
+.iconMessageContactUs , .iconContact {
+    color: var(--mainHover);
+    font-size: 1.5rem;
+}
+.contactList .title {
+    font-size: .9rem;
+}

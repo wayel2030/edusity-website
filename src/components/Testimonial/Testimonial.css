@@ -1,0 +1,34 @@
+
+.testimonial {
+  position: relative;
+}
+.testimonial .carousel-item .image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 0px;
+}
+.testimonial .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .carousel-item .contentSlide {
+  background-color: rgba(0, 0, 0, 80%);
+}
+.testimonial .textFeedback .descr {
+  font-size: 0.9rem;
+}
+.testimonial .starColor , .postIcon{
+  color: #f39c12;
+}
+.testimonial .stars .iconStar {
+  font-size: 0.7rem;
+}
+.testimonial .postIcon {
+  font-size: 2.4rem;
+  margin: 0 10px;
+}

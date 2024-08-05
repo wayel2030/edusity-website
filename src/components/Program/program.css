@@ -1,0 +1,60 @@
+.programContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.programContainer .imgContent {
+  width: 300px;
+  position: relative;
+  height: 350px;
+}
+.programContainer .imgContent img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.imgContent .caption {
+    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--mainHoverTransparent);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+.imgContent:hover .caption {
+  opacity: 1;
+  visibility: visible;
+}
+.caption .captionIcon {
+  font-size: 3rem;
+  padding: 10px;
+}
+.imgContent  .caption .title {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding-top: 110%;
+  transition: padding-top .6s ease;
+}
+.caption:hover .title {
+    padding-top: 0;
+}
+.captionIcon,
+.title {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.captionIcon:hover,
+.caption .title:hover {
+  color: #111;
+}

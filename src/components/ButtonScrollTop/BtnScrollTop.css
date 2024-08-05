@@ -1,0 +1,22 @@
+.contentBtnScrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 99;
+}
+.contentBtnScrollTop .btnScrollTop {
+  transition: 0.3s ease;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--mainHover);
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+}
+
+.btnScrollTop:hover {
+  background-color: var(--mainHoverTransparent);
+}
