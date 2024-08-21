@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`navbar position-fixed  bg-body-tertiary navbar-dark bg-dark navbar-expand-lg fixed-top ${
-          sticky ? "showNavBackground" : ""
+        className={`navbar position-fixed   navbar-dark bg-dark bg-body-tertiary  navbar-expand-lg fixed-top ${
+          sticky ? "showNavBackground" : "changeBackground"
         } `}
       >
         <div className="container-fluid">
@@ -38,7 +38,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="offcanvas  offcanvas-end"
+            className="offcanvas bg-dark  offcanvas-end"
             tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -70,23 +70,7 @@ const Navbar = () => {
                     </Link>
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-white  text-capitalize"
-                    aria-current="page"
-                    href="#"
-                  >
-                    <Link
-                      to="program"
-                      spy={true}
-                      offset={-230}
-                      duration={500}
-                      smooth={true}
-                    >
-                      program
-                    </Link>
-                  </a>
-                </li>
+
                 <li className="nav-item">
                   <a
                     className="nav-link text-white  text-capitalize"
@@ -104,23 +88,54 @@ const Navbar = () => {
                     </Link>
                   </a>
                 </li>
-                <li className="nav-item">
+
+                <li className="nav-item dropdown">
                   <a
-                    className="nav-link text-white  text-capitalize"
-                    aria-current="page"
-                    href="#"
+                    className="dropdown-toggle       text-white  text-capitalize"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <Link
-                      to="campus"
-                      spy={true}
-                      offset={-100}
-                      duration={500}
-                      smooth={true}
-                    >
-                      campus
-                    </Link>
+                    eductions
                   </a>
+                  <ul className="dropdown-menu text-center">
+                    <li className="mt-2">
+                      <a
+                        className=" dropdown-item text-white  text-capitalize"
+                        aria-current="page"
+                        href="#"
+                      >
+                        <Link
+                          to="program"
+                          spy={true}
+                          offset={-100}
+                          duration={500}
+                          smooth={true}
+                        >
+                          program
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className=" dropdown-item text-white  text-capitalize"
+                        aria-current="page"
+                        href="#"
+                      >
+                        <Link
+                          to="campus"
+                          spy={true}
+                          offset={-100}
+                          duration={500}
+                          smooth={true}
+                        >
+                          campus
+                        </Link>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
+
                 <li className="nav-item">
                   <a
                     className="nav-link text-white  text-capitalize"

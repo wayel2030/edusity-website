@@ -1,0 +1,49 @@
+.courses .iconSlide {
+  color: var(--mainHover);
+  font-size: 1.5rem;
+}
+.cardSlide {
+  box-shadow: 4px 4px 9px -4px rgba(45, 45, 45, 0.61);
+  background-color: #f2f2f2;
+}
+.teacher .imgTeacher {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cardSlide,
+.numberReviews,
+.reviews {
+  font-size: 0.8rem;
+}
+.cardSlide .reviews {
+  margin-top: 1px;
+}
+.cardSlide .starColor {
+  color: #f39c12;
+}
+.cardSlide .stars .iconStar {
+  font-size: 0.7rem;
+}
+.cardSlide .iconDollar,
+.dollarNumber {
+  color: #f39c12;
+  font-weight: bold;
+}
+/* custom style */
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+  color: #000; /* Change color as needed */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--mainHover); /* Hide default arrows */
+  font-size: 2.3rem !important;
+  background-color: var(--mainHover);
+  padding: 6px 12px;
+  border-radius: 50%;
+  color: white;
+}

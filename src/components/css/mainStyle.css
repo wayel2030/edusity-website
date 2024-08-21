@@ -10,6 +10,8 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   font-weight: normal;
+  list-style: none !important;
+  text-decoration: none !important;
 }
 body {
   background-color: rgb(182, 193, 193);
@@ -17,3 +19,4 @@ body {
 p {
   color: var(--paragraphColor);
 }
+

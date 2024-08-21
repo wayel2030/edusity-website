@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Gallery from "./components/gallery/Gallery";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Courses from "./components/Our Courses/Courses";
 import Program from "./components/Program/Program";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Title from "./components/Title/Title";
@@ -18,6 +19,7 @@ const App = () => {
       <div className="container">
         <Title subTitle="our program" title="what we offer" />
         <Program />
+        <Courses />
         <About />
         <Title subTitle="gallery" title="campus photos" />
         <Gallery />
