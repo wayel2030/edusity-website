@@ -1,0 +1,15 @@
+.topNavbar {
+    background-color: var(--mainHover);
+    position: fixed;
+    top: 0;
+    z-index: 55;
+    width: 100%;
+}
+.iconStyle {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+.numberCall {
+    color: white;
+}

@@ -3,6 +3,7 @@ import "../css/mainStyle.css";
 import "./Navbar.css";
 import { useEffect } from "react";
 import { Link } from "react-scroll";
+import TopNavBar from "../topNavbar/TopNavBar";
 
 const Navbar = () => {
   // Function Scrolling change background navbar
@@ -15,6 +16,7 @@ const Navbar = () => {
 
   return (
     <>
+      <TopNavBar />
       <nav
         className={`navbar position-fixed   navbar-dark bg-dark bg-body-tertiary  navbar-expand-lg fixed-top ${
           sticky ? "showNavBackground" : "changeBackground"
